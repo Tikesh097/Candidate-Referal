@@ -8,19 +8,19 @@ const Home = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-slate-800 mb-5">
             Welcome to the Candidate Referral System
           </h1>
-          
+
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
             Use the navigation to refer candidates or view the dashboard.
           </p>
         </div>
-        
+
         <div className="flex gap-4 justify-center flex-wrap">
           <Link to="/refer">
             <button className="bg-blue-900 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105">
               Refer Candidate
             </button>
           </Link>
-          
+
           <Link to="/dashboard">
             <button className="bg-white hover:bg-blue-50 text-blue-900 hover:text-blue-700 px-8 py-3 rounded-lg font-semibold border-2 border-blue-900 hover:border-blue-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105">
               View Dashboard

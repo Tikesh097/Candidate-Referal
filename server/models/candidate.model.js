@@ -10,7 +10,7 @@ const candidateSchema = new mongoose.Schema({
     enum: ["Pending", "Reviewed", "Hired"],
     default: "Pending"
   },
-  resume: String, // path to uploaded file
+  resume: String, //path to uploaded file
 }, { timestamps: true });
 
 module.exports = mongoose.model("Candidate", candidateSchema);

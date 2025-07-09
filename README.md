@@ -38,7 +38,6 @@ https://candidatereferal.netlify.app/
 ## Deployed App
 * **Frontend:** [Deployed Frontend](https://candidatereferal.netlify.app/)
 * **Backend:** [Deployed Backend](https://candidate-referral-api.railway.app/)
-* **Database:** MongoDB Atlas
 
 ## Directory Structure
 
@@ -139,8 +138,8 @@ cp .env.example .env
 
 5. Configure `.env` file:
 ```env
-MONGO_URI=mmongodb+srv://aswaletinku:6KrUsx4ZtUQWlSqF@cluster0.bmyh9.mongodb.net/CandidateReferal_Data
-PORT=5000
+MONGO_URL
+PORT
 NODE_ENV=development
 ```
 
