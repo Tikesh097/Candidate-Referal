@@ -118,7 +118,7 @@ To set up the project locally:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/candidate-referral.git
+git clone hhttps://github.com/Tikesh097/Candidate-Referal
 ```
 
 2. Navigate to the project directory:
@@ -139,7 +139,7 @@ cp .env.example .env
 
 5. Configure `.env` file:
 ```env
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/candidate-referral
+MONGO_URI=mmongodb+srv://aswaletinku:6KrUsx4ZtUQWlSqF@cluster0.bmyh9.mongodb.net/CandidateReferal_Data
 PORT=5000
 NODE_ENV=development
 ```
@@ -172,10 +172,6 @@ Follow these steps to use the project:
 ## Candidate Management:
 * Add candidates with comprehensive details (name, email, phone, job title).
 * Upload PDF resumes with file validation.
-
-## Dashboard Analytics:
-* View all referred candidates in an organized layout.
-* Real-time status updates without page refresh.
 
 ## Search & Filter:
 * Search candidates by name, email, or job title.
