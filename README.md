@@ -192,14 +192,14 @@ Follow these steps to use the project:
 
 ## Screenshots
 
-1. **SignUp Page:**  
-   ![SignUp Page](path/to/SignUpPage.png)
+1. **Home Page:**  
+   ![Home Page](https://github.com/Tikesh097/Candidate-Referal/blob/main/client/src/Screenshots/HomePage.png)
 
-2. **Login Page:**  
-   ![Login Page](path/to/LoginPage.png)
+1. **DashBoard:**  
+   ![Dashbaord Page](https://github.com/Tikesh097/Candidate-Referal/blob/main/client/src/Screenshots/Dashboard.png)
 
-3. **Home Page:**  
-   ![Home Page](path/to/HomePage.png)
+3. **Referal Form Page:**  
+   ![Referal Form Page](https://github.com/Tikesh097/Candidate-Referal/blob/main/client/src/Screenshots/Referal%20Form.png)
 
 ## API Documentation
 
