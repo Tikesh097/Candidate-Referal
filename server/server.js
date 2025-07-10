@@ -4,16 +4,17 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
 
-// Load environment variables
 dotenv.config();
 
-// Initialize app
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
 app.use(cors({
-  origin: ["https://candidatereferal.netlify.app/"],
+  origin: [
+    "http://localhost:5173",                //local dev frontend
+    "https://candidatereferal.netlify.app"  //deployed frontend
+  ],
+  credentials: true,
 }));
 
 app.use(express.json());
@@ -26,12 +27,12 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const candidateRoutes = require("./routes/candidate.routes");
 app.use("/candidates", candidateRoutes);
 
-// MongoDB Connection
+// MongoDB
 mongoose
-  .connect(process.env.MONGO_URL || "mongodb+srv://aswaletinku:6KrUsx4ZtUQWlSqF@cluster0.bmyh9.mongodb.net/CandidateReferal_Data")
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("✅ MongoDB connected");
-    app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
   .catch((err) => {
     console.error("❌ MongoDB connection error:", err);
