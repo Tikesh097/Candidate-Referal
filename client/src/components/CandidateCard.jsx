@@ -55,7 +55,7 @@ const CandidateCard = ({ candidate, onStatusChange }) => {
                 {candidate.resume && (
                     <div className="flex-shrink-0">
                         <a
-                            href={`http://localhost:5000/${candidate.resume}`}
+                            href={` https://candidate-referal.onrender.com${candidate.resume}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
